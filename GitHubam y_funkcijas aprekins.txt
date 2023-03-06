@@ -1,0 +1,15 @@
+def y(x):
+    if 0 < x < 5:
+        return 8*x - x*x
+    elif 10 < x < 200:
+        return x + 6
+    else:
+        return None
+
+x = float(input("Ievadiet x vērtību: "))
+result = y(x)
+
+if result is not None:
+    print("y vērtība ir:", result)
+else:
+    print("x vērtība nav atļautā diapazonā.")

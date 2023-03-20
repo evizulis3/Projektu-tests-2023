@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Datnes nolasīšana</title>
+</head>
+<body>
+	<form>
+		<label for="input-file">Izvēlies datni:</label>
+		<input type="file" id="input-file">
+	</form>
+	<div id="output"></div>
+	
+	<script>
+		const fileUpload = document.getElementById("input-file");
+		const fileInfo = document.getElementById("output");
+		
+		fileUpload.addEventListener("change", function() {
+			const selectedFile = fileUpload.files[0];
+			
+			const fileName = selectedFile.name;
+			const fileSize = selectedFile.size;
+			
+			fileInfo.textContent = `Nosaukums: ${fileName}, Izmērs: ${fileSize} baiti`;
+		});
+	</script>
+
+</body>
+</html>

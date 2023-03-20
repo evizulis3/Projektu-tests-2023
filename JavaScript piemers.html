@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Skaitļu summa</title>
+</head>
+<body>
+	<h1>Skaitļu summas kalkulators</h1>
+
+	<label for="number1">Ievadiet pirmo skaitli:</label>
+	<input type="number" id="number1">
+
+	<label for="number2">Ievadiet otro skaitli:</label>
+	<input type="number" id="number2">
+
+	<button onclick="calculateSum()">Aprēķināt summu</button>
+
+	<p id="result"></p>
+
+	<script>
+		function calculateSum() {
+			// iegūstam ievades laukus, izmantojot to id
+			var number1 = document.getElementById("number1").value;
+			var number2 = document.getElementById("number2").value;
+
+			// aprēķinām divu skaitļu summu
+			var sum = parseFloat(number1) + parseFloat(number2);
+
+			// parādīt rezultātu uz ekrāna
+			document.getElementById("result").innerHTML = "Summa ir " + sum;
+		}
+	</script>
+</body>
+</html>

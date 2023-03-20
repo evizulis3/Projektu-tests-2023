@@ -1,0 +1,25 @@
+/*visi paragrāfi būs sarkani*/
+p{
+    color: red;
+}
+img {
+    height: 200px;
+}
+h1
+{
+    background: green;
+}
+/*piešķiram klasi*/
+.raksti{
+    padding: 10px;
+    background:lightblue;
+}
+/*lieto arī ID*/
+#id{
+
+}
+/*vai arī lietojam visam div blokam*/
+div{
+    padding:10px;
+    background:darkorange !important;
+}
